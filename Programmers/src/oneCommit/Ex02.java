@@ -4,8 +4,11 @@ import java.util.*;
 public class Ex02 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int[] lottos = {45, 4, 35, 20, 3, 9};
+		int[] win_nums = {20, 9, 3, 45, 4, 35};
+		
+		Solution2 sol = new Solution2();
+		System.out.println(Arrays.toString( sol.solution(lottos, win_nums)));
 	}
 
 }
@@ -35,8 +38,8 @@ class Solution2 {
             }
         }
         
-        answer[0] = count;
-        answer[1] = count+plus;
+        answer[0] = rank.getOrDefault(count+plus, 6);
+        answer[1] = rank.getOrDefault(count, 6);
         
         return answer;
     }
