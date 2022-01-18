@@ -14,8 +14,7 @@ public class Ex03 {
 class Solution3 {
     public int solution(int[] absolutes, boolean[] signs) {
         int answer = 0;
-        int i=0;
-        for(i=0;i<signs.length;i++){
+        for(int i=0;i<signs.length;i++){
             if(signs[i]){
                 //true
                 answer += absolutes[i];
