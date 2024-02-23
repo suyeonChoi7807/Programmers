@@ -14,7 +14,7 @@ public class Ex2_11 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int n=Integer.parseInt(br.readLine());	//ÇÐ»ý¼ö
-		int[][] cla=new int[n][n];
+		int[][] cla=new int[n][5];
 		StringTokenizer st;
 		
 		for(int i=0;i<n;i++) {
@@ -42,6 +42,7 @@ public class Ex2_11 {
 				}
 			}
 			ans[i]=tot.size();
+			
 			tot=new HashSet<>();
 		}
 		
