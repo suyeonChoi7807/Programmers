@@ -31,3 +31,12 @@ class Solution2 {
         return answer;
     }
 }
+
+class Dungeons{
+	int minReqPoint;
+    int usePoint;
+    
+    public Dungeons() {
+		// TODO Auto-generated constructor stub
+	}
+}
